@@ -1,0 +1,10 @@
+header {
+    background-color: aquamarine;
+    content: "ll";
+}
+
+aside {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    background-color: palevioletred;
+}
