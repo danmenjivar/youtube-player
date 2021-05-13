@@ -52,16 +52,104 @@ table {
 }
 
 
+/*
+========================================
+Main Flex Container
+========================================
+*/
 
-
-
-header {
-    background-color: aquamarine;
-    content: "ll";
+/*
+========================================
+Navbar Container
+========================================
+*/
+.navbar {
+    display: flex;
+    flex: 1;
+    color: rgb(255, 255, 255);
+    background-color: rgb(32,32,32);
+    width: 100wh;
+    height: 56px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
 }
 
-aside {
-    grid-column: 2;
-    grid-row: 1 / span 2;
-    background-color: palevioletred;
+.navbar-logo {
+    margin-left: 15px;
+    display: flex;
+}
+
+
+.yt-logo {
+    margin-left: 20px;
+    width: 80px;
+    height: 24px;
+    
+}
+
+.yt-logotype {
+    fill:rgb(255, 255, 255);
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+
+.search-box {
+    margin: 0 10px 0 10px;
+    height: 32px;
+    display: flex;
+    flex: 2;
+}
+
+
+.search-box input[type=search] {
+    width: 566px;
+    background-color: rgba(0, 0, 0, 1);
+    font-size: 16px;
+    font-family: 'Roboto','Noto',sans-serif;
+    border: 1px solid rgb(48, 48, 48);
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border-right: 0px;
+    color: white;
+}
+
+.search-box input[type=search]:focus {
+   outline: 1px solid #3ea6ff;
+}
+
+.search-box .btn:hover {
+    color: #ffff;
+ }
+.search-box .btn {
+    background: rgba(0, 0, 0, 0.1);
+    font-size: 3px;
+    color: rgb(152,152,152);
+    width: 65px;
+    height: 32px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-left: 0px;
+    border: 1px solid rgb(48, 48, 48);
+    cursor: pointer;
+}
+
+.body {
+    display: flex;
+    background: rgba(0, 0, 0, 1);
+    height: calc(100vh - 24px);
+}
+
+.body .video-and-comments{
+    display: flex;
+    flex-direction: column;
+}
+
+.body .recommended {
+    display: flex;
+    flex-direction: column;
 }
