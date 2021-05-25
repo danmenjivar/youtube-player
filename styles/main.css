@@ -146,6 +146,12 @@ Navbar Container
     gap: 15px;
 }
 
+/*
+========================================
+Page Contents
+========================================
+*/
+
 .body {
     display: flex;
     background: rgba(0, 0, 0, 1);
@@ -155,6 +161,8 @@ Navbar Container
 .body .video-and-comments{
     display: flex;
     flex-direction: column;
+    margin-left: 15px;
+    margin-top: 20px;
 }
 
 .body .recommended {
@@ -162,8 +170,41 @@ Navbar Container
     flex-direction: column;
 }
 
-h1 {
+.body h1 {
     color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.body .title-and-views {
+    margin-top: 10px;
+}
+
+.title-and-views p {
+    font-size: 14px;
+    line-height: 2em;
+    color: rgb(170, 170, 173);
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgb(170, 170, 173);
+}
+
+.description p{
+    align-items: center;
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1em;
+}
+
+.description button{
+   float: right;
+    background-color: rgb(204, 0, 0);
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 16px 10px 16px;
+    border-radius: 2px;
+    border: none;
+    
 }
 
 .recommended {
