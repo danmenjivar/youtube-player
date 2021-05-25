@@ -34,6 +34,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+    color: white;
+    font-family: 'Roboto', serif;
 }
 ol, ul {
 	list-style: none;
@@ -138,6 +140,12 @@ Navbar Container
     cursor: pointer;
 }
 
+
+.navbar .navbar-icons {
+    display: flex;
+    gap: 15px;
+}
+
 .body {
     display: flex;
     background: rgba(0, 0, 0, 1);
@@ -152,4 +160,39 @@ Navbar Container
 .body .recommended {
     display: flex;
     flex-direction: column;
+}
+
+h1 {
+    color: white;
+}
+
+.recommended {
+    margin: 20px;
+    color: white;
+    gap: 10px;
+}
+
+
+.recommended-item {
+    display: flex;
+}
+
+.rec-text {
+    width: 202px;
+    font-family: 'Roboto', serif;
+    color: rgb(170, 170, 170);
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.rec-text .creator {
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+
+.rec-text h3 {
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 5px;
 }
